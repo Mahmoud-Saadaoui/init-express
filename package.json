@@ -1,7 +1,7 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "the server-side of my Code Explainer app",
+  "name": "personal-platform-server",
+  "version": "2.0.0",
+  "description": "the server-side of my personal platform app",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -9,16 +9,22 @@
     "server": "node --watch server.js"
   },
   "keywords": [
-    "Code",
-    "Explainer"
+    "express",
+    "personal-platform",
+    "portfolio"
   ],
   "author": "Saadaoui Mahmoud",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.0",
+    "@prisma/client": "^7.4.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
     "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.4.0"
   }
 }
