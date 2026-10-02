@@ -1,17 +1,31 @@
 {
-  "name": "personal-platform-server",
+  "name": "express-prisma-starter",
   "version": "2.0.0",
-  "description": "the server-side of my personal platform app",
+  "description": "Reusable Node.js and Express starter template with Prisma 7, PostgreSQL, security middleware, and i18n foundations",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server": "node --watch server.js"
+    "server": "node --watch server.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:status": "prisma migrate status",
+    "db:studio": "prisma studio",
+    "db:setup": "npm run db:generate && npm run db:migrate -- --name init",
+    "i18n:check": "node i18n-check.mjs"
   },
   "keywords": [
+    "nodejs",
     "express",
-    "personal-platform",
-    "portfolio"
+    "prisma",
+    "postgresql",
+    "backend",
+    "rest-api",
+    "starter-template",
+    "i18n",
+    "i18next",
+    "internationalization"
   ],
   "author": "Saadaoui Mahmoud",
   "license": "ISC",
@@ -22,7 +36,9 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
-    "helmet": "^8.1.0"
+    "helmet": "^8.1.0",
+    "i18next": "^26.4.2",
+    "i18next-http-middleware": "^3.9.9"
   },
   "devDependencies": {
     "prisma": "^7.4.0"

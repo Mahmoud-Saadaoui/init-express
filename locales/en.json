@@ -1,0 +1,20 @@
+{
+  "common": {
+    "helloWorld": "Hello World!"
+  },
+  "auth": {
+    "register": {
+      "success": "User created successfully",
+      "failed": "Failed to create user",
+      "emailAlreadyUsed": "This email address is already registered."
+    },
+    "login": {
+      "success": "User logged in successfully!"
+    }
+  },
+  "errors": {
+    "internalServerError": "Something went wrong. Please try again later.",
+    "rateLimitExceeded": "Too many requests from this IP, please try again later.",
+    "routeNotFound": "This route does not exist."
+  }
+}
